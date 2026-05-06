@@ -13,9 +13,9 @@ Works in VS Code, Notepad, browsers, and most Windows apps.
 
 ## Installation
 
-### Option 1: Download the exe (easiest)
+### Option 1: Download (easiest)
 
-Download `qopy.exe` and `launch-qopy.vbs` from the [Releases](../../releases) page. Put them in the same folder and double-click `launch-qopy.vbs` to run.
+Download and extract `qopy-v1.0.0.zip` from the [Releases](../../releases) page, then double-click `launch-qopy.vbs` to run.
 
 ### Option 2: Build from source
 
