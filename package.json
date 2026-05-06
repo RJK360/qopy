@@ -1,0 +1,31 @@
+{
+  "name": "qopy",
+  "version": "1.0.0",
+  "description": "Swap clipboard values between two locations with Ctrl+Shift+Q",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "package": "npm run build && npx @yao-pkg/pkg . --target node20-win-x64 --output qopy.exe"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/**/*.node",
+      "node_modules/uiohook-napi/dist/**",
+      "node_modules/koffi/build/**"
+    ],
+    "targets": ["node20-win-x64"]
+  },
+  "dependencies": {
+"koffi": "^2.16.1",
+    "uiohook-napi": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@yao-pkg/pkg": "^5.12.0",
+    "ts-node": "^10.9.2",
+    "rcedit": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}

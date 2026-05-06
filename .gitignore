@@ -1,0 +1,5 @@
+node_modules/
+dist/
+qopy.exe
+launch-qopy.vbs
+*.log
